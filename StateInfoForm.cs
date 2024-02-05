@@ -172,7 +172,7 @@ namespace William_Chamness_206_Assignment_3
                     else if (updateBirdRadioButton.Checked)
                         state.bird= newValue;
                     else if (updateFlowerRadioButton.Checked)
-                        state.bird= newValue;
+                        state.flower = newValue;
                     else
                     {
                         MessageBox.Show("Please select an option");
