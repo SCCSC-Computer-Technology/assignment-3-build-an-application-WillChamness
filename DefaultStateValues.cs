@@ -10,6 +10,9 @@ namespace William_Chamness_206_Assignment_3
      * Wrapper for the constants representing default state values.
      * 
      * Pre-processed text files to sort by state. Used vim macros to automatically generate each string.
+     * 
+     * Don't want to accidentally mutate the arrays, so have functions return new arrays instead of having
+     * private variables with accessors. Could write a function to take index as parameter, but I'm too lzay for that.
      */
     static class DefaultStateValues
     {
@@ -71,8 +74,7 @@ namespace William_Chamness_206_Assignment_3
         }
         public static string[] StateSalaries()
         {
-            string[] salaries =
-            {
+            string[] salaries = {
                 "Alaska 48820",
                 "Arizona 39500",
                 "Arkansas 36680",
