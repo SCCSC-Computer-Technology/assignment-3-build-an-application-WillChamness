@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace William_Chamness_206_Assignment_3
+namespace DefaultValuesLibrary
 {
-    /*
+     /*
      * Wrapper for the constants representing default state values.
      * 
-     * Pre-processed text files to sort by state. Used vim macros to automatically generate each string.
+     * Pre-processed text files to sort by state to keep the arrays parallel for processing later. 
+     * Used vim macros to automatically generate each string.
      * 
      * Don't want to accidentally mutate the arrays, so have functions return new arrays instead of having
      * private variables with accessors. Could write a function to take index as parameter, but I'm too lzay for that.
      */
-    static class DefaultStateValues
+
+    public class DefaultStateValuesLibrary
     {
         public static string[] StatePopulations()
         {
@@ -69,9 +71,9 @@ namespace William_Chamness_206_Assignment_3
                 "Wisconsin	5822434",
                 "Wyoming	578759" };
 
-            return statePopulations;
-
+                return statePopulations;
         }
+
         public static string[] StateSalaries()
         {
             string[] salaries = {

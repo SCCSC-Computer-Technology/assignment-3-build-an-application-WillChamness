@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "William-Chamness-206-Assignment-3", "William-Chamness-206-Assignment-3.csproj", "{0F21420A-7026-46B9-B5DF-7A04D4992B53}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DefaultValuesLibrary", "DefaultValuesLibrary\DefaultValuesLibrary.csproj", "{4DDAD5C8-439C-4DA5-9929-BD0EAD629C10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0F21420A-7026-46B9-B5DF-7A04D4992B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F21420A-7026-46B9-B5DF-7A04D4992B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F21420A-7026-46B9-B5DF-7A04D4992B53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DDAD5C8-439C-4DA5-9929-BD0EAD629C10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DDAD5C8-439C-4DA5-9929-BD0EAD629C10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DDAD5C8-439C-4DA5-9929-BD0EAD629C10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DDAD5C8-439C-4DA5-9929-BD0EAD629C10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
