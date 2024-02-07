@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DefaultValuesLibrary;
 
 namespace William_Chamness_206_Assignment_3
 {
@@ -24,7 +25,7 @@ namespace William_Chamness_206_Assignment_3
             this.tableTableAdapter.Fill(this.stateInfoDatabaseDataSet.Table);
 
             // initialize the comboxboxes and reset the datagrid
-            foreach (string stateName in DefaultStateValues.StateNames())
+            foreach (string stateName in DefaultStateValuesLibrary.StateNames())
             {
                 stateCombobox.Items.Add(stateName);
                 updateStateCombobox.Items.Add(stateName);
@@ -45,9 +46,9 @@ namespace William_Chamness_206_Assignment_3
          */
         private void resetDatagrid()
         {
-            string[] populations = DefaultStateValues.StatePopulations();
-            string[] salaries = DefaultStateValues.StateSalaries();
-            string[] otherInfo = DefaultStateValues.StateOtherInfo();
+            string[] populations = DefaultStateValuesLibrary.StatePopulations();
+            string[] salaries = DefaultStateValuesLibrary.StateSalaries();
+            string[] otherInfo = DefaultStateValuesLibrary.StateOtherInfo();
             
             for(int i = 0; i < populations.Length; i++)
             {

@@ -64,7 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultStateValues.cs" />
     <Compile Include="SingleStateInfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +158,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="DefaultValuesLibrary\DefaultValuesLibrary.csproj">
+      <Project>{4ddad5c8-439c-4da5-9929-bd0ead629c10}</Project>
+      <Name>DefaultValuesLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
