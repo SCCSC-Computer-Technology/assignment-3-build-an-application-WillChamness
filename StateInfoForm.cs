@@ -207,5 +207,36 @@ namespace William_Chamness_206_Assignment_3
         {
             this.Close();
         }
+
+        private void filterButton_Click(object sender, EventArgs e)
+        {
+            string substringToLookFor = filterValueTextbox.Text;
+            
+            if(substringToLookFor == "")
+            {
+                MessageBox.Show("Please enter a value into the textbox");
+                return;
+            }
+
+            IQueryable<Table> results = db.Tables;
+
+            if (filterCaptialRadioButton.Checked)
+                results = results.Where((state) => state.capital.Contains(substringToLookFor));
+            else if (filterPopulationRadioButton.Checked)
+                results = results.Where((state) => state.population.Contains(substringToLookFor));
+            else if (filterLargestCityRadioButton.Checked)
+                results = results.Where((state) => state.largest_city.Contains(substringToLookFor));
+            else if (filterBirdRadioButton.Checked)
+                results = results.Where((state) => state.bird.Contains(substringToLookFor));
+            else if (filterFlowerRadioButton.Checked)
+                results = results.Where((state) => state.flower.Contains(substringToLookFor));
+            else
+            {
+                MessageBox.Show("Please select an option");
+                return;
+            }
+
+            dataGrid.DataSource = results;
+        }
     }
 }
