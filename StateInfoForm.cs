@@ -23,6 +23,7 @@ namespace William_Chamness_206_Assignment_3
             // TODO: This line of code loads data into the 'stateInfoDatabaseDataSet.Table' table. You can move, or remove it, as needed.
             this.tableTableAdapter.Fill(this.stateInfoDatabaseDataSet.Table);
 
+            // initialize the comboxboxes and reset the datagrid
             foreach (string stateName in DefaultStateValues.StateNames())
             {
                 stateCombobox.Items.Add(stateName);
@@ -31,11 +32,17 @@ namespace William_Chamness_206_Assignment_3
             resetDatagrid();
         }
 
+        /*
+         * Handler for clicking resetButton
+         */
         private void resetButton_Click(object sender, EventArgs e)
         {
             resetDatagrid();
         }
 
+        /*
+         * Resets the datagrid by getting default data from a static class.
+         */
         private void resetDatagrid()
         {
             string[] populations = DefaultStateValues.StatePopulations();
@@ -109,6 +116,9 @@ namespace William_Chamness_206_Assignment_3
             }
         }
 
+        /*
+         * Handler for clicking searchButton
+         */
         private void searchButton_Click(object sender, EventArgs e)
         {
             string name = searchStateNameTextbox.Text;
@@ -126,9 +136,13 @@ namespace William_Chamness_206_Assignment_3
             results = largestCity != "" ? results.Where((state) => state.largest_city == largestCity) : results;
             results = bird != "" ? results.Where((state) => state.bird == bird) : results;
             results = flower != "" ? results.Where((state) => state.flower== flower) : results;
+
             dataGrid.DataSource = results;
         }
 
+        /*
+         * Handler for clicking sortButton
+         */
         private void sortButton_Click(object sender, EventArgs e)
         {
             if (sortNameRadioButton.Checked)
@@ -147,6 +161,9 @@ namespace William_Chamness_206_Assignment_3
                 MessageBox.Show("Please select an option");
         }
 
+        /*
+         * Handler for clicking updateButton 
+         */
         private void updateButton_Click(object sender, EventArgs e)
         {
             string stateName = updateStateCombobox.SelectedItem.ToString();
@@ -189,6 +206,9 @@ namespace William_Chamness_206_Assignment_3
 
         }
 
+        /*
+         * Handler for clicking clearButton
+         */
         private void clearButton_Click(object sender, EventArgs e)
         {
             dataGrid.DataSource = db.Tables;
@@ -203,11 +223,17 @@ namespace William_Chamness_206_Assignment_3
             updateValueTextbox.Text = "";
         }
 
+        /*
+         * Handler for clicking exitButton
+         */
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        /*
+         * Handler for clicking filterButton
+         */
         private void filterButton_Click(object sender, EventArgs e)
         {
             string substringToLookFor = filterValueTextbox.Text;
