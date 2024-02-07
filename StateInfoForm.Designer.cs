@@ -58,31 +58,41 @@ namespace William_Chamness_206_Assignment_3
             this.searchButton = new System.Windows.Forms.Button();
             this.searchGroupbox = new System.Windows.Forms.GroupBox();
             this.sortGroupbox = new System.Windows.Forms.GroupBox();
-            this.sortNameRadioButton = new System.Windows.Forms.RadioButton();
-            this.sortCapitalRadioButton = new System.Windows.Forms.RadioButton();
-            this.sortPopulationRadioButton = new System.Windows.Forms.RadioButton();
-            this.sortLargestCityRadioButton = new System.Windows.Forms.RadioButton();
-            this.sortBirdRadioButton = new System.Windows.Forms.RadioButton();
-            this.sortFlowerRadioButton = new System.Windows.Forms.RadioButton();
             this.sortButton = new System.Windows.Forms.Button();
+            this.sortFlowerRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortBirdRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortLargestCityRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortPopulationRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortCapitalRadioButton = new System.Windows.Forms.RadioButton();
+            this.sortNameRadioButton = new System.Windows.Forms.RadioButton();
             this.updateGroupbox = new System.Windows.Forms.GroupBox();
+            this.updateValueLabel = new System.Windows.Forms.Label();
+            this.updateValueTextbox = new System.Windows.Forms.TextBox();
+            this.updateStateCombobox = new System.Windows.Forms.ComboBox();
             this.updateButton = new System.Windows.Forms.Button();
             this.updateFlowerRadioButton = new System.Windows.Forms.RadioButton();
             this.updateBirdRadioButton = new System.Windows.Forms.RadioButton();
             this.updateLargestCityRadioButton = new System.Windows.Forms.RadioButton();
             this.updatePopulationRadioButton = new System.Windows.Forms.RadioButton();
             this.updateCapitalRadioButton = new System.Windows.Forms.RadioButton();
-            this.updateStateCombobox = new System.Windows.Forms.ComboBox();
-            this.updateValueTextbox = new System.Windows.Forms.TextBox();
-            this.updateValueLabel = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.filterGroupbox = new System.Windows.Forms.GroupBox();
+            this.filterValueLabel = new System.Windows.Forms.Label();
+            this.filterValueTextbox = new System.Windows.Forms.TextBox();
+            this.filterButton = new System.Windows.Forms.Button();
+            this.filterFlowerRadioButton = new System.Windows.Forms.RadioButton();
+            this.filterBirdRadioButton = new System.Windows.Forms.RadioButton();
+            this.filterLargestCityRadioButton = new System.Windows.Forms.RadioButton();
+            this.filterPopulationRadioButton = new System.Windows.Forms.RadioButton();
+            this.filterCaptialRadioButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.tableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stateInfoDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             this.searchGroupbox.SuspendLayout();
             this.sortGroupbox.SuspendLayout();
             this.updateGroupbox.SuspendLayout();
+            this.filterGroupbox.SuspendLayout();
             this.SuspendLayout();
             // 
             // resetButton
@@ -325,60 +335,15 @@ namespace William_Chamness_206_Assignment_3
             this.sortGroupbox.TabStop = false;
             this.sortGroupbox.Text = "Sort";
             // 
-            // sortNameRadioButton
+            // sortButton
             // 
-            this.sortNameRadioButton.AutoSize = true;
-            this.sortNameRadioButton.Location = new System.Drawing.Point(51, 28);
-            this.sortNameRadioButton.Name = "sortNameRadioButton";
-            this.sortNameRadioButton.Size = new System.Drawing.Size(53, 17);
-            this.sortNameRadioButton.TabIndex = 0;
-            this.sortNameRadioButton.TabStop = true;
-            this.sortNameRadioButton.Text = "Name";
-            this.sortNameRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // sortCapitalRadioButton
-            // 
-            this.sortCapitalRadioButton.AutoSize = true;
-            this.sortCapitalRadioButton.Location = new System.Drawing.Point(51, 51);
-            this.sortCapitalRadioButton.Name = "sortCapitalRadioButton";
-            this.sortCapitalRadioButton.Size = new System.Drawing.Size(57, 17);
-            this.sortCapitalRadioButton.TabIndex = 1;
-            this.sortCapitalRadioButton.TabStop = true;
-            this.sortCapitalRadioButton.Text = "Capital";
-            this.sortCapitalRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // sortPopulationRadioButton
-            // 
-            this.sortPopulationRadioButton.AutoSize = true;
-            this.sortPopulationRadioButton.Location = new System.Drawing.Point(51, 74);
-            this.sortPopulationRadioButton.Name = "sortPopulationRadioButton";
-            this.sortPopulationRadioButton.Size = new System.Drawing.Size(75, 17);
-            this.sortPopulationRadioButton.TabIndex = 2;
-            this.sortPopulationRadioButton.TabStop = true;
-            this.sortPopulationRadioButton.Text = "Population";
-            this.sortPopulationRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // sortLargestCityRadioButton
-            // 
-            this.sortLargestCityRadioButton.AutoSize = true;
-            this.sortLargestCityRadioButton.Location = new System.Drawing.Point(51, 95);
-            this.sortLargestCityRadioButton.Name = "sortLargestCityRadioButton";
-            this.sortLargestCityRadioButton.Size = new System.Drawing.Size(80, 17);
-            this.sortLargestCityRadioButton.TabIndex = 3;
-            this.sortLargestCityRadioButton.TabStop = true;
-            this.sortLargestCityRadioButton.Text = "Largest City";
-            this.sortLargestCityRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // sortBirdRadioButton
-            // 
-            this.sortBirdRadioButton.AutoSize = true;
-            this.sortBirdRadioButton.Location = new System.Drawing.Point(51, 118);
-            this.sortBirdRadioButton.Name = "sortBirdRadioButton";
-            this.sortBirdRadioButton.Size = new System.Drawing.Size(43, 17);
-            this.sortBirdRadioButton.TabIndex = 4;
-            this.sortBirdRadioButton.TabStop = true;
-            this.sortBirdRadioButton.Text = "Bird";
-            this.sortBirdRadioButton.UseVisualStyleBackColor = true;
+            this.sortButton.Location = new System.Drawing.Point(51, 174);
+            this.sortButton.Name = "sortButton";
+            this.sortButton.Size = new System.Drawing.Size(75, 23);
+            this.sortButton.TabIndex = 6;
+            this.sortButton.Text = "Sort";
+            this.sortButton.UseVisualStyleBackColor = true;
+            this.sortButton.Click += new System.EventHandler(this.sortButton_Click);
             // 
             // sortFlowerRadioButton
             // 
@@ -391,15 +356,60 @@ namespace William_Chamness_206_Assignment_3
             this.sortFlowerRadioButton.Text = "Flower";
             this.sortFlowerRadioButton.UseVisualStyleBackColor = true;
             // 
-            // sortButton
+            // sortBirdRadioButton
             // 
-            this.sortButton.Location = new System.Drawing.Point(51, 174);
-            this.sortButton.Name = "sortButton";
-            this.sortButton.Size = new System.Drawing.Size(75, 23);
-            this.sortButton.TabIndex = 6;
-            this.sortButton.Text = "Sort";
-            this.sortButton.UseVisualStyleBackColor = true;
-            this.sortButton.Click += new System.EventHandler(this.sortButton_Click);
+            this.sortBirdRadioButton.AutoSize = true;
+            this.sortBirdRadioButton.Location = new System.Drawing.Point(51, 118);
+            this.sortBirdRadioButton.Name = "sortBirdRadioButton";
+            this.sortBirdRadioButton.Size = new System.Drawing.Size(43, 17);
+            this.sortBirdRadioButton.TabIndex = 4;
+            this.sortBirdRadioButton.TabStop = true;
+            this.sortBirdRadioButton.Text = "Bird";
+            this.sortBirdRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // sortLargestCityRadioButton
+            // 
+            this.sortLargestCityRadioButton.AutoSize = true;
+            this.sortLargestCityRadioButton.Location = new System.Drawing.Point(51, 95);
+            this.sortLargestCityRadioButton.Name = "sortLargestCityRadioButton";
+            this.sortLargestCityRadioButton.Size = new System.Drawing.Size(80, 17);
+            this.sortLargestCityRadioButton.TabIndex = 3;
+            this.sortLargestCityRadioButton.TabStop = true;
+            this.sortLargestCityRadioButton.Text = "Largest City";
+            this.sortLargestCityRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // sortPopulationRadioButton
+            // 
+            this.sortPopulationRadioButton.AutoSize = true;
+            this.sortPopulationRadioButton.Location = new System.Drawing.Point(51, 74);
+            this.sortPopulationRadioButton.Name = "sortPopulationRadioButton";
+            this.sortPopulationRadioButton.Size = new System.Drawing.Size(75, 17);
+            this.sortPopulationRadioButton.TabIndex = 2;
+            this.sortPopulationRadioButton.TabStop = true;
+            this.sortPopulationRadioButton.Text = "Population";
+            this.sortPopulationRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // sortCapitalRadioButton
+            // 
+            this.sortCapitalRadioButton.AutoSize = true;
+            this.sortCapitalRadioButton.Location = new System.Drawing.Point(51, 51);
+            this.sortCapitalRadioButton.Name = "sortCapitalRadioButton";
+            this.sortCapitalRadioButton.Size = new System.Drawing.Size(57, 17);
+            this.sortCapitalRadioButton.TabIndex = 1;
+            this.sortCapitalRadioButton.TabStop = true;
+            this.sortCapitalRadioButton.Text = "Capital";
+            this.sortCapitalRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // sortNameRadioButton
+            // 
+            this.sortNameRadioButton.AutoSize = true;
+            this.sortNameRadioButton.Location = new System.Drawing.Point(51, 28);
+            this.sortNameRadioButton.Name = "sortNameRadioButton";
+            this.sortNameRadioButton.Size = new System.Drawing.Size(53, 17);
+            this.sortNameRadioButton.TabIndex = 0;
+            this.sortNameRadioButton.TabStop = true;
+            this.sortNameRadioButton.Text = "Name";
+            this.sortNameRadioButton.UseVisualStyleBackColor = true;
             // 
             // updateGroupbox
             // 
@@ -418,6 +428,30 @@ namespace William_Chamness_206_Assignment_3
             this.updateGroupbox.TabIndex = 20;
             this.updateGroupbox.TabStop = false;
             this.updateGroupbox.Text = "Update";
+            // 
+            // updateValueLabel
+            // 
+            this.updateValueLabel.AutoSize = true;
+            this.updateValueLabel.Location = new System.Drawing.Point(18, 171);
+            this.updateValueLabel.Name = "updateValueLabel";
+            this.updateValueLabel.Size = new System.Drawing.Size(37, 13);
+            this.updateValueLabel.TabIndex = 23;
+            this.updateValueLabel.Text = "Value:";
+            // 
+            // updateValueTextbox
+            // 
+            this.updateValueTextbox.Location = new System.Drawing.Point(61, 168);
+            this.updateValueTextbox.Name = "updateValueTextbox";
+            this.updateValueTextbox.Size = new System.Drawing.Size(100, 20);
+            this.updateValueTextbox.TabIndex = 22;
+            // 
+            // updateStateCombobox
+            // 
+            this.updateStateCombobox.FormattingEnabled = true;
+            this.updateStateCombobox.Location = new System.Drawing.Point(18, 27);
+            this.updateStateCombobox.Name = "updateStateCombobox";
+            this.updateStateCombobox.Size = new System.Drawing.Size(121, 21);
+            this.updateStateCombobox.TabIndex = 21;
             // 
             // updateButton
             // 
@@ -484,33 +518,9 @@ namespace William_Chamness_206_Assignment_3
             this.updateCapitalRadioButton.Text = "Capital";
             this.updateCapitalRadioButton.UseVisualStyleBackColor = true;
             // 
-            // updateStateCombobox
-            // 
-            this.updateStateCombobox.FormattingEnabled = true;
-            this.updateStateCombobox.Location = new System.Drawing.Point(18, 27);
-            this.updateStateCombobox.Name = "updateStateCombobox";
-            this.updateStateCombobox.Size = new System.Drawing.Size(121, 21);
-            this.updateStateCombobox.TabIndex = 21;
-            // 
-            // updateValueTextbox
-            // 
-            this.updateValueTextbox.Location = new System.Drawing.Point(61, 168);
-            this.updateValueTextbox.Name = "updateValueTextbox";
-            this.updateValueTextbox.Size = new System.Drawing.Size(100, 20);
-            this.updateValueTextbox.TabIndex = 22;
-            // 
-            // updateValueLabel
-            // 
-            this.updateValueLabel.AutoSize = true;
-            this.updateValueLabel.Location = new System.Drawing.Point(18, 171);
-            this.updateValueLabel.Name = "updateValueLabel";
-            this.updateValueLabel.Size = new System.Drawing.Size(37, 13);
-            this.updateValueLabel.TabIndex = 23;
-            this.updateValueLabel.Text = "Value:";
-            // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(723, 505);
+            this.clearButton.Location = new System.Drawing.Point(859, 505);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 21;
@@ -521,7 +531,7 @@ namespace William_Chamness_206_Assignment_3
             // exitButton
             // 
             this.exitButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.exitButton.Location = new System.Drawing.Point(804, 505);
+            this.exitButton.Location = new System.Drawing.Point(940, 505);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(75, 23);
             this.exitButton.TabIndex = 22;
@@ -529,13 +539,112 @@ namespace William_Chamness_206_Assignment_3
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // filterGroupbox
+            // 
+            this.filterGroupbox.Controls.Add(this.filterValueLabel);
+            this.filterGroupbox.Controls.Add(this.filterValueTextbox);
+            this.filterGroupbox.Controls.Add(this.filterButton);
+            this.filterGroupbox.Controls.Add(this.filterFlowerRadioButton);
+            this.filterGroupbox.Controls.Add(this.filterBirdRadioButton);
+            this.filterGroupbox.Controls.Add(this.filterLargestCityRadioButton);
+            this.filterGroupbox.Controls.Add(this.filterPopulationRadioButton);
+            this.filterGroupbox.Controls.Add(this.filterCaptialRadioButton);
+            this.filterGroupbox.Location = new System.Drawing.Point(823, 215);
+            this.filterGroupbox.Name = "filterGroupbox";
+            this.filterGroupbox.Size = new System.Drawing.Size(192, 257);
+            this.filterGroupbox.TabIndex = 24;
+            this.filterGroupbox.TabStop = false;
+            this.filterGroupbox.Text = "Filter";
+            // 
+            // filterValueLabel
+            // 
+            this.filterValueLabel.AutoSize = true;
+            this.filterValueLabel.Location = new System.Drawing.Point(7, 151);
+            this.filterValueLabel.Name = "filterValueLabel";
+            this.filterValueLabel.Size = new System.Drawing.Size(37, 13);
+            this.filterValueLabel.TabIndex = 23;
+            this.filterValueLabel.Text = "Value:";
+            // 
+            // filterValueTextbox
+            // 
+            this.filterValueTextbox.Location = new System.Drawing.Point(50, 148);
+            this.filterValueTextbox.Name = "filterValueTextbox";
+            this.filterValueTextbox.Size = new System.Drawing.Size(100, 20);
+            this.filterValueTextbox.TabIndex = 22;
+            // 
+            // filterButton
+            // 
+            this.filterButton.Location = new System.Drawing.Point(50, 214);
+            this.filterButton.Name = "filterButton";
+            this.filterButton.Size = new System.Drawing.Size(75, 23);
+            this.filterButton.TabIndex = 6;
+            this.filterButton.Text = "Filter";
+            this.filterButton.UseVisualStyleBackColor = true;
+            this.filterButton.Click += new System.EventHandler(this.filterButton_Click);
+            // 
+            // filterFlowerRadioButton
+            // 
+            this.filterFlowerRadioButton.AutoSize = true;
+            this.filterFlowerRadioButton.Location = new System.Drawing.Point(16, 115);
+            this.filterFlowerRadioButton.Name = "filterFlowerRadioButton";
+            this.filterFlowerRadioButton.Size = new System.Drawing.Size(56, 17);
+            this.filterFlowerRadioButton.TabIndex = 5;
+            this.filterFlowerRadioButton.TabStop = true;
+            this.filterFlowerRadioButton.Text = "Flower";
+            this.filterFlowerRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // filterBirdRadioButton
+            // 
+            this.filterBirdRadioButton.AutoSize = true;
+            this.filterBirdRadioButton.Location = new System.Drawing.Point(16, 92);
+            this.filterBirdRadioButton.Name = "filterBirdRadioButton";
+            this.filterBirdRadioButton.Size = new System.Drawing.Size(43, 17);
+            this.filterBirdRadioButton.TabIndex = 4;
+            this.filterBirdRadioButton.TabStop = true;
+            this.filterBirdRadioButton.Text = "Bird";
+            this.filterBirdRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // filterLargestCityRadioButton
+            // 
+            this.filterLargestCityRadioButton.AutoSize = true;
+            this.filterLargestCityRadioButton.Location = new System.Drawing.Point(16, 69);
+            this.filterLargestCityRadioButton.Name = "filterLargestCityRadioButton";
+            this.filterLargestCityRadioButton.Size = new System.Drawing.Size(80, 17);
+            this.filterLargestCityRadioButton.TabIndex = 3;
+            this.filterLargestCityRadioButton.TabStop = true;
+            this.filterLargestCityRadioButton.Text = "Largest City";
+            this.filterLargestCityRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // filterPopulationRadioButton
+            // 
+            this.filterPopulationRadioButton.AutoSize = true;
+            this.filterPopulationRadioButton.Location = new System.Drawing.Point(16, 48);
+            this.filterPopulationRadioButton.Name = "filterPopulationRadioButton";
+            this.filterPopulationRadioButton.Size = new System.Drawing.Size(75, 17);
+            this.filterPopulationRadioButton.TabIndex = 2;
+            this.filterPopulationRadioButton.TabStop = true;
+            this.filterPopulationRadioButton.Text = "Population";
+            this.filterPopulationRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // filterCaptialRadioButton
+            // 
+            this.filterCaptialRadioButton.AutoSize = true;
+            this.filterCaptialRadioButton.Location = new System.Drawing.Point(16, 25);
+            this.filterCaptialRadioButton.Name = "filterCaptialRadioButton";
+            this.filterCaptialRadioButton.Size = new System.Drawing.Size(57, 17);
+            this.filterCaptialRadioButton.TabIndex = 1;
+            this.filterCaptialRadioButton.TabStop = true;
+            this.filterCaptialRadioButton.Text = "Capital";
+            this.filterCaptialRadioButton.UseVisualStyleBackColor = true;
+            // 
             // StateInfoForm
             // 
             this.AcceptButton = this.clearButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.exitButton;
-            this.ClientSize = new System.Drawing.Size(891, 540);
+            this.ClientSize = new System.Drawing.Size(1039, 549);
+            this.Controls.Add(this.filterGroupbox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.clearButton);
             this.Controls.Add(this.updateGroupbox);
@@ -557,6 +666,8 @@ namespace William_Chamness_206_Assignment_3
             this.sortGroupbox.PerformLayout();
             this.updateGroupbox.ResumeLayout(false);
             this.updateGroupbox.PerformLayout();
+            this.filterGroupbox.ResumeLayout(false);
+            this.filterGroupbox.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -610,6 +721,15 @@ namespace William_Chamness_206_Assignment_3
         private System.Windows.Forms.RadioButton updateCapitalRadioButton;
         private System.Windows.Forms.Button clearButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.GroupBox filterGroupbox;
+        private System.Windows.Forms.Label filterValueLabel;
+        private System.Windows.Forms.TextBox filterValueTextbox;
+        private System.Windows.Forms.Button filterButton;
+        private System.Windows.Forms.RadioButton filterFlowerRadioButton;
+        private System.Windows.Forms.RadioButton filterBirdRadioButton;
+        private System.Windows.Forms.RadioButton filterLargestCityRadioButton;
+        private System.Windows.Forms.RadioButton filterPopulationRadioButton;
+        private System.Windows.Forms.RadioButton filterCaptialRadioButton;
     }
 }
 
